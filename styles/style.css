@@ -1,3 +1,92 @@
-h1 {
-	color: red;
+.body {
+	margin: 0;
+	padding: 0;
+	color: #1F1E1E;
+}
+
+.page-header {
+	display: flex;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 111px;
+	position: fixed;
+	top: 0;
+	padding: 0 40px;
+	background-color: #DEDEDE80;
+}
+
+.page-header__logo {
+	display: block;
+	min-width: 152px;
+	border: solid 1px black;
+}
+
+.page-header__nav {
+	width: 475px;
+	margin: auto;
+	line-height: 25px;
+	text-align: center;
+}
+
+.page-header__user-link {
+	width: 131px;
+	height: 52px;
+	border: 1px solid black;
+	margin: auto auto;
+	text-align: center;
+	line-height: 52px;
+}
+
+.main {
+
+}
+
+.home {
+
+}
+
+.home__main-header {
+	max-width: 450px;
+	margin: 211px auto 100px;
+	text-align: center;
+}
+
+.main-header__banner {
+	display: block;
+	width: 100%;
+	height: 257px;
+	border: 1px solid black;
+}
+
+.home__offer {
+	width: 604px;
+	margin: 0 auto;
+	text-align: center;
+	margin: 100px auto;
+}
+
+section {
+	height: 100px;
+}
+
+.section-title {
+	max-width: 604px;
+	margin: 0 auto;
+	line-height: 62px;
+	text-align: center;
+	background-color: #1F1E1E;
+	color: #FFFFFF;
+} 
+
+.quote {
+	height: 100px;
+	margin: 100px 0;
+	border: 1px solid black;
+}
+
+.page-footer {
+	height: 318px;
+	max-width: 1260px;
+	margin: 100px auto;
+	border: 1px solid black;
 }
