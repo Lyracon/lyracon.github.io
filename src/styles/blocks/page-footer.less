@@ -1,0 +1,31 @@
+.page-footer {
+	box-sizing: border-box;
+	justify-self: end;
+	height: 457px;
+	width: 100%;
+
+	&__hr
+	{
+		height: 2px;
+		max-width: 1334px;
+		margin: 0 auto;
+		background: linear-gradient(
+			to right,
+			#00000000 0%,
+			#000000ff calc(50% - 49px),
+			#00000000 calc(50% - 49px),
+			#00000000 calc(50% + 49px),
+			#000000ff calc(50% + 49px),
+			#00000000 100%
+		);
+		border: none;
+	}
+
+	&__container
+	{
+		min-height: 320px; /*временно, пока нет наполнения*/
+		max-width: 1334px;
+		margin: 60px auto 75px;
+		border: 1px solid black;
+	}
+}

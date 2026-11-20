@@ -1,0 +1,106 @@
+<form class="reserve" action="">
+    <div class="reserve__first-row">
+        <div class="reserve__item reserve__tables-list">
+            <h4 class="reserve__title">Забронировать столик</h4>
+            @@loop("checkbox-list-row.html", [
+                {
+                    "modificator": "--red",
+                    "text": "1 стол"
+                },
+                {
+                    "modificator": "",
+                    "text": "2 стол"
+                },
+                {
+                    "modificator": "",
+                    "text": "3 стол"
+                },
+                {
+                    "modificator": "--red",
+                    "text": "4 стол"
+                },
+                {
+                    "modificator": "",
+                    "text": "5 стол"
+                },
+                {
+                    "modificator": "",
+                    "text": "6 стол"
+                },
+                {
+                    "modificator": "--red",
+                    "text": "7 стол"
+                },
+                {
+                    "modificator": "--red",
+                    "text": "8 стол"
+                },
+                {
+                    "modificator": "--red",
+                    "text": "9 стол"
+                },
+                {
+                    "modificator": "",
+                    "text": "10 стол"
+                },
+                {
+                    "modificator": "",
+                    "text": "11 стол"
+                }
+            ])
+        </div>
+        <div class="reserve__item reserve__map">
+            <h4 class="reserve__title reserve__title--scene">Сцена</h4>
+            <svg class="reserve__map-icon">
+                <use xlink:href="assets/icons/symbols.svg#map"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="reserve__second-row">
+        <div class="reserve__item reserve__check">
+            <h4 class="reserve__title">Ваши пригласительные билеты</h4>
+            <div class="check-row">
+                <p class="check-row__count">9 шт. | 1400 ₽</p>
+                <p class="check-row__amount">12 600 ₽</p>
+            </div>
+            <div class="check-row">
+                <p class="check-row__count">4 шт. | 1250 ₽</p>
+                <p class="check-row__amount">5000 ₽</p>
+            </div>
+            <div class="check-amount">
+                <p class="check-amount__sum-label">Сумма</p>
+                <p class="check-amount__sum">17 600 ₽</p>   
+            </div>
+    
+            <button class="btn btn--red">
+                Купить белеты
+            </button>
+        </div>
+    
+        <div class="reserve__item reserve__legend">
+            <h4 class="reserve__title">Стоимость пригласительного билета</h4>
+            <div class="reserve__legend-info">
+                <p class="reserve__legend-info-row">
+                    <span class="reserve__marker reserve__marker--red"></span>
+                    <span>1400 ₽ | 1 персона</span>
+                    </p>
+                    <p class="reserve__legend-info-row">
+                    <span class="reserve__marker"></span>
+                    <span>1259 ₽ | 1 персона</span>
+                </p>
+            </div>
+            <h4 class="reserve__title">Примечание</h4>
+            <div class="reserve__legend-info">
+                <p class="reserve__legend-info-row">
+                        <span class="reserve__marker reserve__circle-marker reserve__circle-marker--black-n-red"></span>
+                    <span>доступные места</span>
+                </p>
+                <p class="reserve__legend-info-row">
+                    <span class="reserve__marker reserve__circle-marker reserve__circle-marker--gray"></span>
+                    <span>забронировано</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</form>
