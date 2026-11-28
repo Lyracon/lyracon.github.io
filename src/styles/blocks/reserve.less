@@ -1,9 +1,8 @@
  .reserve {
 	display: flex;
     flex-direction: column;
-    gap: 60px;
 	justify-content: space-between;
-	margin: 80px 0 120px;
+	margin: 80px 0px 120px;
 
     &__first-row {
         display: grid;
@@ -11,7 +10,7 @@
         grid-template-areas:
             "list map";
         justify-content: space-between;
-        margin: 80px 40px 0;
+        margin-top: 80px;
     }
 
     &__second-row {
@@ -20,7 +19,7 @@
         grid-template-areas:
     		"check legend";
         justify-content: space-between;
-        margin: 0 40px;
+        // margin: 0 0px;
     }
 
 	&__item {
@@ -29,13 +28,13 @@
 	}
 
     &__title {
-        margin: 0 0 20px;
+        margin: 0 0 20px !important;
         
         &--scene {
             display: inline-block;
             color: @white;
             background-color: @black;
-            margin: 0 auto 40px;
+            margin: 0 auto 40px !important;
             padding: 6px 56px;
             font-size: 16px;
             line-height: 1.38;
@@ -48,13 +47,15 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+        min-width: 300px;
         margin-bottom: 116px;
 	}
 	
     &__map {
         grid-area: map;
         justify-self: end;
-        width: 780px;
+        width: 100%;
+        max-width: 780px;
         
         &-icon {
             margin: 0 0 48px;
@@ -119,7 +120,7 @@
                 align-items: center;
                 height: 24px;
                 gap: 9px;
-                margin: 0;
+                margin: 0 !important;
                 font-size: 14px;
                 font-weight: 400;
             }
@@ -180,7 +181,7 @@
         
         &--gray {
             box-sizing: border-box;
-            background-color: @gray_dark;
+            background-color: #BFBFBF;
             border-radius: 50%;
         }
     }

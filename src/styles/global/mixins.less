@@ -8,10 +8,42 @@
     padding-right: 40px;
 }
 
+.noise-bg() {
+  background-color: @gray;
+	background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
+	background-position: 0 0, 0 0;
+	background-size: auto, 100%, auto;
+	background-repeat: repeat, repeat-y;
+}
+
 .display-none {
   display: none;
 }
 
 .color-red {
   color: @red;
+}
+
+.show-event-popup {
+  body {
+    overflow: hidden;
+  }
+  #event-popup {
+    display: flex;
+  } 
+}
+
+.is-hidden() {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(100%) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important ;
 }

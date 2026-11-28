@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="show-event-popup">
 	@@include('blocks/head.html') 
 
 	<body class="body">
 		@@include('blocks/page-header.html')
+		@@include('blocks/event-popup.html')
 		
 		<main class="main">
 			<div class="home">
@@ -15,15 +16,9 @@
 						МЕСТО ДЛЯ НАСТОЯЩЕГО
 					</p>
 				</header>
-
-				<section class="offers home__offer">
-					<h4 class="offers__title">Я ХОЧУ:</h4>
-					<div class="offers__btns">
-						<button class="offers__btn btn btn--red" type="button">Провести мероприятие</button>
-						<button class="offers__btn btn" type="button">Стать арендатором</button>
-					</div>
-				</section>
-
+				
+				@@include('blocks/offer.html')
+				
 				<section class="about home__about">
 					<h2 class="about__section-title section-title">О НАС</h2>
 					<div class="about__container">

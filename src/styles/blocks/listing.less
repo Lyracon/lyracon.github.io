@@ -8,4 +8,37 @@
 	&__event-card {
 		width: 	calc(33.333% - 38.6px);
 	}
+
+    &__see-more {
+        display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        margin: 70px auto 0px;
+        text-align: center;
+        width: 128px;
+        height: 132px;
+        transition: color 0.2s;
+
+        &:hover {
+            color: @red;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: @open_sans;
+            line-height: 1.38;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__arrow-down {
+        width: 91px;
+        height: 100%;
+        transform: rotate(90deg);
+    }
 }

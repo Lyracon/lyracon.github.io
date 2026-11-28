@@ -6,8 +6,9 @@
 		@@include('blocks/page-header.html')
 
 		<main class="main">
+            @@include('blocks/path.html', {'path': 'Главная  / Мероприятия'})
             <div class="events">
-                <section class="listing events__listing">
+                <section class="events__listing listing">
                     <h2 class="listing__section-title section-title">Мероприятия</h2>
                     <div class="listing__events-listing">
                         @@loop('blocks/event-card.html', [
@@ -67,7 +68,23 @@
                             },
                         ])
                     </div>
+                    <a href="#" class="listing__see-more">
+                        <span class="listing__see-more-text">Показать еще</span>
+                        <svg class="listing__arrow-down" width="202" height="147">
+                            <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                        </svg>
+                    </a>
                 </section>
+
+                <section class="events__additional-services additional-services">
+                    <h2 class="additional-services__title">дополнительные  услуги</h2>
+                    <p class="additional-services__info">
+                        Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
+                    </p>
+                    @@include('blocks/table.html')
+                </section>
+                @@include('blocks/offer.html', {"class": "events__offers"})
+                
             </div>
 		</main>
 		
